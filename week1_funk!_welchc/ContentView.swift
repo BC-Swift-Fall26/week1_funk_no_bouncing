@@ -10,6 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State private var imageName = ""
 
+    var imageColor: Color {
+        switch imageName {
+        case "globe":
+            return .teal
+        case "wind":
+            return .blue
+        case "flame":
+            return .red
+        default:
+            return .primary
+        }
+    }
+
     var body: some View {
         VStack {
             Text("Who Brings the Funk?")
@@ -36,6 +49,7 @@ struct ContentView: View {
             Image(systemName: imageName)
                 .resizable()
                 .scaledToFit()
+                .foregroundColor(imageColor)
         }
     }
 }

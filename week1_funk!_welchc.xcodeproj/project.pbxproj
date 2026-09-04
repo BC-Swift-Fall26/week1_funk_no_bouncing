@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FED02B8D3048AC63007DB554 /* AI_Reflection.md in Resources */ = {isa = PBXBuildFile; fileRef = FED02B8C3048AC63007DB554 /* AI_Reflection.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FE9C4D363048A76F0051ABB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		FE9C4D263048A76B0051ABB1 /* week1_funk!_welchc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "week1_funk!_welchc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9C4D353048A76F0051ABB1 /* week1_funk!_welchcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "week1_funk!_welchcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9C4D3F3048A76F0051ABB1 /* week1_funk!_welchcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "week1_funk!_welchcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED02B8C3048AC63007DB554 /* AI_Reflection.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AI_Reflection.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +74,7 @@
 		FE9C4D1D3048A76B0051ABB1 = {
 			isa = PBXGroup;
 			children = (
+				FED02B8C3048AC63007DB554 /* AI_Reflection.md */,
 				FE9C4D283048A76B0051ABB1 /* week1_funk!_welchc */,
 				FE9C4D383048A76F0051ABB1 /* week1_funk!_welchcTests */,
 				FE9C4D423048A76F0051ABB1 /* week1_funk!_welchcUITests */,
@@ -197,6 +203,7 @@
 		FE9C4D243048A76B0051ABB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				FED02B8D3048AC63007DB554 /* AI_Reflection.md in Resources */,
 			);
 		};
 		FE9C4D333048A76F0051ABB1 /* Resources */ = {
