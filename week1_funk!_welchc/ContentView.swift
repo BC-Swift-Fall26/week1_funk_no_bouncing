@@ -49,6 +49,7 @@ struct ContentView: View {
             Image(systemName: imageName)
                 .resizable()
                 .scaledToFit()
+                .frame(width: 100, height: 100)
                 .foregroundColor(imageColor)
         }
     }

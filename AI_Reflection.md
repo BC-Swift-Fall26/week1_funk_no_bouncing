@@ -1,6 +1,6 @@
 **Name**: Cook Welch
-**Topic**: Understanding the AI-written code to change the Image colors
-**Prompt**: Modify the code so that the globe image is teal, the wind image is blue, and the flame image is red.
-**Result**: The AI added a computed property called `imageColor` that uses a switch statement to match `imageName` to the right color, then applied it to the image with a `.foregroundColor(imageColor)` modifier so the icon recolors automatically whenever a button is tapped.
-**What I learned**: I learned how a switch statement acts like a lookup table to map one value to another, and how SwiftUI automatically redraws a view whenever a piece of the state it depends on changes.
-**What I changed / distrusted:** I didn't change the code, but I made sure to read through the switch statement and modifier chain myself and had Claudia explain it in plain terms so I understood how the color updates automatically.
+**Topic**: Keeping the layout steady when switching images
+**Prompt**: Can we make the images smaller so that the text and buttons don't move around when we click on the buttons?
+**Result**: The AI added a `.frame(width: 100, height: 100)` modifier to the image view. Before that change the image had no set size, so it grew or shrank based on which system symbol was loaded, and that pushed the title text and button row around every time a new icon was picked.
+**What I learned**: I learned that in SwiftUI a view without an explicit frame just takes up whatever size the content needs, and that different Symbols can have different natural dimensions. Giving the image a fixed frame makes it take up the same amount of space e in theno matter what is inside it.
+**What I changed / distrusted:** I checked the app after the change to confirm the title and buttons didn't bounce when clicking any of the buttons.
